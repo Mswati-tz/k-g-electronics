@@ -1,0 +1,73 @@
+<section class="py-5" id="booking-section">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="p-4 bg-navy text-white rounded-4 h-100 shadow-lg border-start border-warning border-5">
+            <h3 class="fw-bold mb-4" style="color: var(--gold);">Omba Huduma Sasa</h3>
+            <p class="small opacity-75 mb-4 text-primary">
+              Jaza fomu hii fupi na timu yetu ya K&G Electrical itakuwasiliana nawe ndani ya saa 24 kwa ajili ya kufanya tathmini ya mradi wako.
+            </p>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3 d-flex align-items-center">
+                <i class="fas fa-check-circle text-warning me-2"></i>
+                <span class="small text-primary">Tathmini ya bure (Free Inspection) Arusha</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="fas fa-check-circle text-warning me-2"></i>
+                <span class="small text-primary">Ushauri wa kitaalamu wa vifaa na usalama</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-warning me-2"></i>
+                <span class="small text-primary">Bei nafuu na kazi inayozingatia viwango</span>
+              </li>
+            </ul>
+            <div class="mt-5 p-3 rounded-3" style="background: rgba(255,255,255,0.1);">
+              <p class="small mb-1 text-warning fw-bold text-uppercase">Emergency? Call Us:</p>
+              <h5 class="fw-bold mb-0 text-primary">0763374531</h5>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4">
+            <form action="#" method="POST">
+              {% csrf_token %}
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold">Jina Kamili</label>
+                  <input type="text" name="name" class="form-control bg-light border-0 py-3" placeholder="Mfano: Augustino ..." required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold">Namba ya Simu</label>
+                  <input type="tel" name="phone" class="form-control bg-light border-0 py-3" placeholder="07xxxxxxxx" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label small fw-bold">Huduma Unayohitaji</label>
+                  <select name="service_type" class="form-select bg-light border-0 py-3">
+                    <option value="wiring">Industrial & Domestic Wiring</option>
+                    <option value="cctv">CCTV Surveillance Systems</option>
+                    <option value="fence">Electric Fence Installation</option>
+                    <option value="maintenance">Electrical Maintenance</option>
+                    <option value="other">Huduma Nyingine</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label small fw-bold">Eneo (Arusha na kwingineko)</label>
+                  <input type="text" name="location" class="form-control bg-light border-0 py-3" placeholder="Mfano: Njiro, Sakina, Kisongo...">
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label small fw-bold">Ujumbe wa Ziada</label>
+                  <textarea name="message" class="form-control bg-light border-0" rows="3" placeholder="Andika maelezo mafupi ya hitaji lako..."></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-navy btn-lg w-100 py-3 fw-bold shadow-0">
+                    TUMA MAOMBI YA HUDUMA
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

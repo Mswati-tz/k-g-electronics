@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="hero" class="d-flex align-items-center justify-content-center" style="min-height: 100vh; padding-top: 80px;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="glass-card p-5 text-center text-white animate__animated animate__zoomIn">
+          <h4 class="text-uppercase fw-bold mb-3" style="color: var(--gold); letter-spacing: 4px;">K&G Electrical Services</h4>
+          <h1 class="display-3 fw-bold mb-4">Professional & Industrial Electrical Solutions</h1>
+          <p class="lead mb-5 mx-auto opacity-90" style="max-width: 750px;">
+            Specializing in domestic, commercial, and industrial electrical installations, maintenance, and security systems across Arusha.
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a class="btn btn-warning btn-lg fw-bold px-5 py-3 shadow-0 rounded-pill" href="tel:0763374531">
+              <i class="fas fa-phone-alt me-2"></i>Emergency Response
+            </a>
+            <a class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill" href="{% url 'about' %}">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: -60px; position: relative; z-index: 5;">
+  <div class="row g-0 glass-card text-center overflow-hidden d-none d-md-flex border-0" style="border-radius: 100px; background: rgba(0, 31, 63, 0.6);">
+    <div class="col-md-3 p-4 border-end border-white border-opacity-10">
+      <i class="fas fa-certificate text-warning me-2"></i> <span class="small fw-bold text-white">Certified Electricians</span>
+    </div>
+    <div class="col-md-3 p-4 border-end border-white border-opacity-10">
+      <i class="fas fa-clock text-warning me-2"></i> <span class="small fw-bold text-white">24/7 Availability</span>
+    </div>
+    <div class="col-md-3 p-4 border-end border-white border-opacity-10">
+      <i class="fas fa-shield-alt text-warning me-2"></i> <span class="small fw-bold text-white">Guaranteed Safety</span>
+    </div>
+    <div class="col-md-3 p-4">
+      <i class="fas fa-tools text-warning me-2"></i> <span class="small fw-bold text-white">Quality Workmanship</span>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5 py-5">
+  <div class="row align-items-center glass-card p-4 p-md-5 g-5 border-0">
+    <div class="col-lg-6">
+      <h6 class="text-warning fw-bold text-uppercase mb-3">About K&G Electrical</h6>
+      <h2 class="fw-bold mb-4 text-white display-5">Your Reliable Partner for Every Electrical Need</h2>
+      <p class="text-white opacity-75 mb-4">
+        At K&G Electrical Services, we pride ourselves on delivering high-quality electrical solutions tailored to meet the specific needs of our clients in Arusha. 
+      </p>
+      <div class="row g-3">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check-circle text-warning me-2"></i> <span class="fw-bold small text-white">Fast Turnaround</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-check-circle text-warning me-2"></i> <span class="fw-bold small text-white">Affordable Pricing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="position-relative">
+        <img src="{%static 'img/kg.jpg'%}" class="img-fluid rounded-4 shadow-lg border border-white border-opacity-10" alt="K&G Work">
+        <div class="position-absolute bottom-0 end-0 p-3 bg-warning text-dark fw-bold rounded-start shadow">
+          10+ Years Exp
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5">
+  <div class="container py-4 text-center text-white">
+    <h2 class="fw-bold">What We Do Best</h2>
+    <div class="mx-auto bg-warning mb-3" style="height: 3px; width: 60px;"></div>
+    <p class="opacity-75 mx-auto mb-5" style="max-width: 600px;">Comprehensive electrical and security services designed to keep your property powered and protected.</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="glass-card h-100 hover-up p-4 border-0">
+          <div class="bg-warning bg-opacity-10 rounded-circle d-inline-block p-4 mb-4">
+            <i class="fas fa-bolt fa-3x text-warning"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Electrical Installations</h5>
+          <p class="small opacity-75">Complete wiring for new constructions, office fit-outs, and industrial plants.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="glass-card h-100 hover-up p-4 border-0">
+          <div class="bg-warning bg-opacity-10 rounded-circle d-inline-block p-4 mb-4">
+            <i class="fas fa-video fa-3x text-warning"></i>
+          </div>
+          <h5 class="fw-bold mb-3">CCTV & Surveillance</h5>
+          <p class="small opacity-75">High-definition smart cameras with remote mobile access for 24/7 monitoring.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="glass-card h-100 hover-up p-4 border-0">
+          <div class="bg-warning bg-opacity-10 rounded-circle d-inline-block p-4 mb-4">
+            <i class="fas fa-shield-virus fa-3x text-warning"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Security Fencing</h5>
+          <p class="small opacity-75">Installation of high-voltage electric fences with integrated alarm systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="glass-card p-5 text-center text-white border-0" style="background: rgba(255,215,0,0.05);">
+    <h2 class="fw-bold mb-4">Are You Ready to Secure Your Property?</h2>
+    <p class="mb-5 opacity-75">Get a free inspection and quote from our experts today.</p>
+    <a href="https://wa.me/255763374531" class="btn btn-warning btn-lg px-5 py-3 fw-bold shadow-0 rounded-pill">
+      <i class="fab fa-whatsapp me-2"></i> CONTACT US ON WHATSAPP
+    </a>
+  </div>
+</div>
+
+<style>
+  .hover-up { transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .hover-up:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.15) !important; cursor: pointer; }
+  #hero { background: radial-gradient(circle at center, rgba(0,31,63,0.1) 0%, rgba(0,0,0,0.3) 100%); }
+</style>
+
+{% endblock %}

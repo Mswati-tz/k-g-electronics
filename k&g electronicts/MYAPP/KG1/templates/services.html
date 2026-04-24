@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="py-5 text-center text-white" style="margin-top: 60px;">
+  <div class="container py-5">
+    <div class="glass-card p-5 animate__animated animate__fadeInDown">
+      <h1 class="display-4 fw-bold">Our Professional Services</h1>
+      <div class="mx-auto bg-warning my-3" style="height: 4px; width: 80px;"></div>
+      <p class="lead opacity-90 mx-auto" style="max-width: 750px;">
+        K&G Electrical provides a full range of electrical installation, maintenance, and security solutions for residential, commercial, and industrial clients in Arusha.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  
+  <div class="row align-items-center mb-5 glass-card g-0 overflow-hidden border-0">
+    <div class="col-lg-6">
+      <img src="{%static 'img/one.jpg'%}" class="img-fluid h-100" style="object-fit: cover; min-height: 400px;" alt="Electrical Installation">
+    </div>
+    <div class="col-lg-6 p-4 p-md-5 text-white">
+      <h6 class="text-warning fw-bold text-uppercase mb-2">Installation & Wiring</h6>
+      <h2 class="fw-bold mb-4">Complete Electrical Solutions</h2>
+      <p class="opacity-75">
+        Our expert electricians specialize in comprehensive wiring and electrical installations for both new builds and renovation projects.
+      </p>
+      <ul class="list-unstyled mb-4">
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Phase balancing and load distribution</li>
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Distribution Board (DB) upgrades and installs</li>
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Fault finding and safety certification</li>
+      </ul>
+      <a href="#booking-section" class="btn btn-warning px-4 py-2 fw-bold rounded-pill shadow-0">Request This Service</a>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5 glass-card g-0 overflow-hidden border-0 flex-lg-row-reverse">
+    <div class="col-lg-6">
+      <img src="{%static 'img/camera.jpg'%}" class="img-fluid h-100" style="object-fit: cover; min-height: 400px;" alt="CCTV Systems">
+    </div>
+    <div class="col-lg-6 p-4 p-md-5 text-white text-lg-end">
+      <h6 class="text-warning fw-bold text-uppercase mb-2">Security & Surveillance</h6>
+      <h2 class="fw-bold mb-4">State-of-the-Art CCTV Systems</h2>
+      <p class="opacity-75">
+        Protect your assets with our high-end security solutions. Monitor your property from anywhere in the world using your mobile device.
+      </p>
+      <ul class="list-unstyled mb-4 d-inline-block text-start">
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> IP and Analog camera installations</li>
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Remote mobile viewing configuration</li>
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Maintenance of DVR/NVR systems</li>
+      </ul>
+      <br>
+      <a href="#booking-section" class="btn btn-warning px-4 py-2 fw-bold rounded-pill shadow-0">Book CCTV Installation</a>
+    </div>
+  </div>
+
+  <div class="row align-items-center mb-5 glass-card g-0 overflow-hidden border-0">
+    <div class="col-lg-6">
+      <img src="{%static 'img/fanc.jpg'%}" class="img-fluid h-100" style="object-fit: cover; min-height: 400px;" alt="Electric Fencing">
+    </div>
+    <div class="col-lg-6 p-4 p-md-5 text-white">
+      <h6 class="text-warning fw-bold text-uppercase mb-2">Perimeter Security</h6>
+      <h2 class="fw-bold mb-4">Electric Fence Installation</h2>
+      <p class="opacity-75">
+        Secure your perimeter with our high-voltage electric fencing solutions that act as both a physical deterrent and an early warning system.
+      </p>
+      <ul class="list-unstyled mb-4">
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Wall-top and free-standing fencing</li>
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Integration with alarm systems and sirens</li>
+        <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i> Power backup for continuous operation</li>
+      </ul>
+      <a href="#booking-section" class="btn btn-warning px-4 py-2 fw-bold rounded-pill shadow-0">Request Fencing Quote</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="container pb-5">
+  <div class="glass-card p-5 text-center text-white border-0" style="background: rgba(255,215,0,0.1);">
+    <h2 class="fw-bold mb-3">Facing an Electrical Emergency?</h2>
+    <p class="opacity-90 mb-4 mx-auto" style="max-width: 600px;">Our technicians are available 24/7 for urgent repairs and safety inspections in Arusha and surrounding areas.</p>
+    <a href="tel:0763374531" class="btn btn-warning btn-lg px-5 fw-bold rounded-pill shadow-0">
+      <i class="fas fa-phone-alt me-2"></i> CALL 0763374531
+    </a>
+  </div>
+</div>
+
+<div id="booking-section">
+    {% include 'booking_form.html' %}
+</div>
+
+<style>
+  /* Hii inahakikisha picha hazina border radius upande mmoja zikiwa ndani ya card */
+  @media (min-width: 992px) {
+    .row.glass-card img {
+      border-radius: 0;
+    }
+  }
+  
+  /* Effect ya kuongeza mwanga panya anapopita kwenye huduma */
+  .glass-card {
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+</style>
+
+{% endblock %}
